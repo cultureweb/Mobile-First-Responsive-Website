@@ -212,3 +212,31 @@ section {
   font-size: 15px;
   font-weight: 500;
 }
+.project__section {
+  background: url("images/project-background.jpg") center no-repeat;
+  background-size: cover;
+}
+.flex__container {
+  min-height: 65vh;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+}
+.headline__title {
+  color: #fff;
+  font-size: 3.7rem;
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  margin-right: -0.5rem;
+  animation: scale 0.5s forwards;
+}
+.headline__container {
+  text-align: center;
+  margin-top: 3.9rem;
+}
+.headline__container p {
+  color: #fff;
+}
