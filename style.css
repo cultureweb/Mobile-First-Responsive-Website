@@ -17,6 +17,7 @@ h6,
 p {
   font-family: var(--main-font);
 }
+
 :root {
   --main-font: "Open Sans", sans-serif;
   --secondary-font: "Herr Von Muellerhoff", cursive;
@@ -35,6 +36,9 @@ html {
 }
 body {
   overflow-x: hidden;
+}
+p {
+  font-size: 1.6rem;
 }
 ul {
   list-style: none;
@@ -189,4 +193,22 @@ nav::before {
 .container {
   width: 100%;
   padding: 0 2.4rem;
+}
+section {
+  padding: 3.9rem 0;
+}
+.about__info {
+  text-align: center;
+}
+.about__info > h2 {
+  font-size: 2rem;
+  margin-top: 3.9rem;
+}
+.about__info p {
+  margin: 20px 0;
+}
+.about__info a {
+  color: var(--main-font-color-dark);
+  font-size: 15px;
+  font-weight: 500;
 }
