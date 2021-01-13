@@ -34,13 +34,6 @@ html {
   color: var(--body-font-color);
   scroll-behavior: smooth;
   overflow-x: hidden;
-  /* Hide scrollbar for Firefox IE and Edge */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-/* Hide scrollbar for chrome, Safari and Opera */
-html::-webkit-scrollbar {
-  display: none;
 }
 
 body {
