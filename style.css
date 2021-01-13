@@ -74,8 +74,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  /* z-index: 1;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent); */
+  /* z-index: 1; */
 }
 nav {
   height: 7.2rem;
@@ -172,8 +171,34 @@ nav::before {
   opacity: 1;
   transform: scale(1);
 }
+/******* anchor link to about ******/
+.down__to__hero {
+  width: 7rem;
+  height: 7rem;
+  /* background-color: rgba(18, 18, 18, 0.3); */
+  /* background-color: #121212; */
+  position: absolute;
+  margin-top: 100px;
+  /* top: -3rem; */
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+.down__to__hero i {
+  display: block;
+  color: #515151;
+  font-size: 2rem;
+  padding: 2rem;
+  animation: down 2s infinite;
+}
 
 /******  Section *********/
+.single__animation {
+  opacity: 0;
+  animation: fadeDown 0.5s forwards;
+  animation-delay: 1s;
+}
 .hero {
   width: 100%;
   height: 100vh;
@@ -460,4 +485,79 @@ footer hr {
   line-height: 24px;
   color: #737373;
   padding-bottom: 1rem;
+}
+
+/* Animations */
+
+/* Hero animation*/
+@keyframes fadeUp {
+  0% {
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-360deg);
+  }
+}
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Back-to-top icon animation*/
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}
+@keyframes down {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
 }
