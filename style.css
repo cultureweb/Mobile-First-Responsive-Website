@@ -611,7 +611,8 @@ footer hr {
     display: flex;
     justify-content: space-between;
   }
-  /* .project-description {
-    margin: 0 3rem;
-  } */
+  .footer-about {
+    max-width: 51.3rem;
+    margin: 0 auto 5.4rem;
+  }
 }

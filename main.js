@@ -77,3 +77,35 @@ function runOnScroll() {
   }
 }
 window.addEventListener("scroll", runOnScroll);
+
+// Scroll reveal
+window.sr = ScrollReveal();
+
+sr.reveal(".animate-left", {
+  reset: true,
+  origin: "left",
+  duration: 1000,
+  distance: "25rem",
+  delay: 300,
+});
+sr.reveal(".animate-right", {
+  reset: true,
+  origin: "right",
+  duration: 1000,
+  distance: "25rem",
+  delay: 600,
+});
+sr.reveal(".animate-top", {
+  reset: true,
+  origin: "top",
+  duration: 1000,
+  distance: "25rem",
+  delay: 600,
+});
+sr.reveal(".animate-bottom", {
+  reset: true,
+  origin: "bottom",
+  duration: 1000,
+  distance: "25rem",
+  delay: 600,
+});
