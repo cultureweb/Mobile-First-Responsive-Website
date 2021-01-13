@@ -166,7 +166,10 @@ nav::before {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url("images/hero.jpg") center no-repeat;
+  background: url("images/hero.jpg") center no-repeat #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   display: flex;
   display: -webkit-flex;
@@ -215,7 +218,10 @@ section {
   font-weight: 500;
 }
 #project {
-  background: url("images/project-background.jpg") center no-repeat;
+  background: url("images/project-background.jpg") center no-repeat #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 .divider {
@@ -306,6 +312,9 @@ section {
 }
 #blog {
   /* background: url("images/perfect-blend.jpg") center no-repeat; */
-  background: url("images/blog.jpg") center no-repeat;
+  background: url("images/blog.jpg") center no-repeat #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
