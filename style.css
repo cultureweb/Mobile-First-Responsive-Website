@@ -59,7 +59,7 @@ a {
 }
 .active-header {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(99, 97, 97, 0.5);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   transition: background-color 0.5s ease;
@@ -252,6 +252,12 @@ section {
   color: var(--main-font-color-dark);
   font-size: 15px;
   font-weight: 500;
+}
+.about-title {
+  color: var(--main-font-color-dark);
+  font-size: 3.7rem;
+  font-family: var(--main-font);
+  font-weight: 900;
 }
 #project {
   background: url("images/project-background.jpg") center no-repeat #000;
@@ -487,8 +493,6 @@ footer hr {
   padding-bottom: 1rem;
 }
 
-/* Animations */
-
 /* Hero animation*/
 @keyframes fadeUp {
   0% {
@@ -560,4 +564,54 @@ footer hr {
     opacity: 0;
     transform: translateY(1rem);
   }
+}
+
+/************** Media queries *************/
+@media screen and (min-width: 900px) {
+  .menu-toggle {
+    display: none;
+  }
+  nav {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+  }
+  .nav-list {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    padding: 0;
+    justify-content: initial;
+    flex-direction: row;
+    transform: initial;
+    transition: initial;
+  }
+  .nav-list > li {
+    margin: 0 2.4rem;
+  }
+  nav::before {
+    display: none;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+  }
+  .project-info,
+  .about-info {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    text-align: left;
+  }
+  .project-info > div,
+  .about-info > div {
+    padding: 3rem;
+    flex: 1;
+  }
+  .footer-divider {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* .project-description {
+    margin: 0 3rem;
+  } */
 }
