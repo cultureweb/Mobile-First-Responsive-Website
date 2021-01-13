@@ -14,7 +14,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
   font-family: var(--main-font);
 }
 
@@ -239,4 +240,66 @@ section {
 }
 .headline__container p {
   color: #fff;
+}
+.image-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+.projects__description {
+  padding-top: 3rem;
+  margin-bottom: 0;
+}
+.sub__headline {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--secondary-font-color);
+  font-weight: 100;
+  line-height: 0.4;
+  letter-spacing: 2px;
+}
+.headline__dark {
+  color: var(--main-font-color-dark);
+  letter-spacing: 0.7rem;
+  margin-right: -0.7rem;
+}
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 2px;
+}
+.body__btn {
+  font-size: 1.5rem;
+  color: var(--secondary-font-color);
+  position: relative;
+  transition: color 0.5s;
+}
+.body__btn::before {
+  /* content: ""; */
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-font-color);
+  transition: background-color 0.5s;
+}
+.body__btn:hover,
+.body__btn:focus {
+  color: var(--main-font-color-dark);
+}
+.body__btn:hover::before,
+.body__btn:focus::before {
+  background-color: var(--main-font-color-dark);
+}
+.project__description a {
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+.project__description p {
+  margin-bottom: 2.4rem;
+}
+.project__info {
+  text-align: center;
 }
