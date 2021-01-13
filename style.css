@@ -57,7 +57,7 @@ a {
 .hide {
   display: none;
 }
-.active__header {
+.active-header {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(5px);
@@ -65,7 +65,7 @@ a {
   transition: background-color 0.5s ease;
   z-index: 1;
 }
-.header__wrapper {
+.header-wrapper {
   width: 100%;
   padding: 0 2.4rem;
 }
@@ -90,7 +90,7 @@ nav {
   z-index: 1500;
   color: #fff;
 }
-.header__info {
+.header-info {
   position: fixed;
   font-family: var(--main-font);
   font-size: 2rem;
@@ -99,7 +99,7 @@ nav {
   color: #fff;
   z-index: 1400;
 }
-.menu__toggle {
+.menu-toggle {
   position: fixed;
   color: #fff;
   font-size: 2.2rem;
@@ -111,7 +111,7 @@ nav {
 .fa-times {
   display: none;
 }
-.nav__list {
+.nav-list {
   position: fixed;
   top: 0;
   right: 0;
@@ -128,7 +128,7 @@ nav {
   transform: translateX(100%);
   transition: transform 0.5s;
 }
-.nav__list > li > a {
+.nav-list > li > a {
   font-family: var(--main-font);
   display: block;
   color: #fff;
@@ -138,7 +138,7 @@ nav {
   margin-right: -2px;
   transition: color 0.5s;
 }
-.nav__list > li > a:hover {
+.nav-list > li > a:hover {
   color: var(--secondary-font-color);
 }
 .active {
@@ -164,7 +164,7 @@ nav::before {
 .open .fa-bars {
   display: none;
 }
-.open .nav__list {
+.open .nav-list {
   transform: translateX(0);
 }
 .open nav::before {
@@ -172,7 +172,7 @@ nav::before {
   transform: scale(1);
 }
 /******* anchor link to about ******/
-.down__to__hero {
+.down-to-hero {
   width: 7rem;
   height: 7rem;
   /* background-color: rgba(18, 18, 18, 0.3); */
@@ -185,7 +185,7 @@ nav::before {
   transform: translateX(-50%);
   border-radius: 50%;
 }
-.down__to__hero i {
+.down-to-hero i {
   display: block;
   color: #515151;
   font-size: 2rem;
@@ -194,7 +194,7 @@ nav::before {
 }
 
 /******  Section *********/
-.single__animation {
+.single-animation {
   opacity: 0;
   animation: fadeDown 0.5s forwards;
   animation-delay: 1s;
@@ -238,17 +238,17 @@ nav::before {
 section {
   padding: 3.9rem 0;
 }
-.about__info {
+.about-info {
   text-align: center;
 }
-.about__info > h2 {
+.about-info > h2 {
   font-size: 2rem;
   margin-top: 3.9rem;
 }
-.about__info p {
+.about-info p {
   margin: 20px 0;
 }
-.about__info a {
+.about-info a {
   color: var(--main-font-color-dark);
   font-size: 15px;
   font-weight: 500;
@@ -277,21 +277,21 @@ section {
   margin-right: -0.5rem;
   animation: scale 0.5s forwards;
 }
-.headline__container {
+.headline-container {
   text-align: center;
   margin-top: 3.9rem;
 }
-.headline__container p {
+.headline-container p {
   color: #fff;
 }
-.sub__headline {
+.sub-headline {
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
   line-height: 0.4;
   letter-spacing: 2px;
 }
-.headline__dark {
+.headline-dark {
   color: var(--main-font-color-dark);
   letter-spacing: 0.7rem;
   margin-right: -0.7rem;
@@ -301,7 +301,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
 }
-.project__description {
+.project-description {
   padding-top: 3rem;
   margin-bottom: 0;
 }
@@ -312,13 +312,13 @@ section {
   letter-spacing: 2px;
   margin-right: 2px;
 }
-.body__btn {
+.body-btn {
   font-size: 1.5rem;
   color: var(--secondary-font-color);
   position: relative;
   transition: color 0.5s;
 }
-.body__btn::before {
+.body-btn::before {
   /* content: ""; */
   position: absolute;
   left: 0;
@@ -328,22 +328,22 @@ section {
   background-color: var(--secondary-font-color);
   transition: background-color 0.5s;
 }
-.body__btn:hover,
-.body__btn:focus {
+.body-btn:hover,
+.body-btn:focus {
   color: var(--main-font-color-dark);
 }
-.body__btn:hover::before,
-.body__btn:focus::before {
+.body-btn:hover::before,
+.body-btn:focus::before {
   background-color: var(--main-font-color-dark);
 }
-.project__description a {
+.project-description a {
   line-height: 1.6;
   margin-bottom: 2.4rem;
 }
-.project__description p {
+.project-description p {
   margin: 2rem 0;
 }
-.project__info {
+.project-info {
   text-align: center;
 }
 #blog {
@@ -388,7 +388,7 @@ footer {
   position: relative;
 }
 
-.footer__content h4 {
+.footer-content h4 {
   font-size: 1.9rem;
   text-transform: uppercase;
   font-weight: 100;
@@ -396,59 +396,59 @@ footer {
   margin-bottom: 3rem;
 }
 
-.footer__about {
+.footer-about {
   margin-bottom: 5.4rem;
 }
-.footer__about p {
+.footer-about p {
   line-height: 2;
 }
-.social__icons {
+.social-icons {
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
   justify-content: center;
   margin-bottom: 3rem;
 }
-.social__media h4 {
+.social-media h4 {
   font-size: 15px;
 }
-.social__media p {
+.social-media p {
   color: #908c8c;
 }
-.social__media a > input {
+.social-media a > input {
   font-size: 13px;
   margin: 20px 0px;
   font-family: var(--main-font);
   color: #908c8c;
 }
 
-.social__media a {
+.social-media a {
   color: #908c8c;
 }
 
-.social__media ul {
+.social-media ul {
   width: 60%;
   margin: auto;
 }
 
-.social__media ul li i {
+.social-media ul li i {
   margin-right: 1rem;
 }
-.social__icons i {
+.social-icons i {
   font-size: 2rem;
   color: #fff;
   padding: 0.8rem 2rem;
   opacity: 0.5;
   transition: color 0.5s;
 }
-.social__icons i:hover,
-.social__icons i:focus {
+.social-icons i:hover,
+.social-icons i:focus {
   color: var(--secondary-font-color);
 }
 #newsletter {
   font-size: 15px;
 }
-.newsletter__form {
+.newsletter-form {
   width: 100%;
   position: relative;
   display: flex;
@@ -456,13 +456,13 @@ footer {
   display: -ms-flexbox;
   justify-content: center;
 }
-.newsletter__input {
+.newsletter-input {
   width: 100%;
   max-width: 25rem;
   padding: 1rem;
   border-radius: 0.4rem;
 }
-.newsletter__btn {
+.newsletter-btn {
   background-color: transparent;
   border: none;
   color: var(--main-font-color-dark);

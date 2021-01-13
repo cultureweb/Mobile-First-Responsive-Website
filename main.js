@@ -2,7 +2,7 @@
 const selectElement = (element) => document.querySelector(element);
 
 // select the menu icon
-const menuToggler = selectElement(".menu__toggle");
+const menuToggler = selectElement(".menu-toggle");
 
 // select body
 const body = selectElement("body");
@@ -71,9 +71,9 @@ function runOnScroll() {
   console.log({ scrollPosition });
   const header = document.querySelector("header");
   if (scrollPosition >= 200) {
-    header.classList.add("active__header");
+    header.classList.add("active-header");
   } else {
-    header.classList.remove("active__header");
+    header.classList.remove("active-header");
   }
 }
 window.addEventListener("scroll", runOnScroll);
