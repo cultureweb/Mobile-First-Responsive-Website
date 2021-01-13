@@ -80,20 +80,20 @@
       </div>
     </section>
     <!-- About section ends-->
-    <!-- start Project section -->
-    <section id="project" class="project__section flex__container">
+    <!-- start Divider project section -->
+    <section id="project" class="divider">
       <div class="container">
         <div class="headline__container">
           <div class="animate__top">
             <div class="animate__bottom">
-              <h1 class="headline__title">Projects</h1>
-              <p>Sharing projects with others</p>
+              <h1 class="headline">Projects</h1>
+              <p class="subtitle">Sharing projects with others</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Project section ends-->
+    <!-- Divider project section ends-->
     <!-- start latest project section-->
     <section class="latest__projects">
       <div class="container">
@@ -107,7 +107,7 @@
           <div class="project__description animate-right">
             <div class="headline__container">
               <h2 class="sub__headline">Latest</h2>
-              <h2 class="headline__title headline__dark">Projects</h2>
+              <h2 class="headline headline__dark">Projects</h2>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
@@ -121,6 +121,83 @@
       </div>
     </section>
     <!-- latest project section ends-->
+    <!-- start Divider blog section -->
+    <section id="blog" class="divider">
+      <div class="container">
+        <div class="headline__container">
+          <div class="animate__top">
+            <div class="animate__bottom">
+              <h1 class="headline">Blog</h1>
+              <p class="subtitle">Tutorial, tips and more..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider blog section ends-->
+    <!-- start Last posts section -->
+    <section>
+      <div class="container">
+        <div class="project__info">
+          <div class="project__description">
+            <div class="headline__container">
+              <span class="sub__headline"> Latest</span>
+              <h2 class="headline headline__dark">Posts</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              culpa quas, facilis vero dignissimos neque voluptas autem esse qui
+              obcaecati perspiciatis quod beatae eligendi cumque asperiores
+              mollitia! Illum, ducimus assumenda adipisicing elit.
+            </p>
+            <a href="#newsletter" class="btn body__btn">
+              &rarr; View All Posts</a
+            >
+          </div>
+          <div class="image-group">
+            <img class="animate__top" src="images/last-post-1.jpg" alt="" />
+            <img class="animate__bottom" src="images/last-post-2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Last posts section ends -->
+    <!-- star google map -->
+    <section id="google__map"
+      <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+      <script>
+        (function () {
+          var setting = {
+            height: 250,
+            width: 1920,
+            zoom: 8,
+            queryString: "Annecy, France",
+            place_id: "ChIJu_5hWOWPi0cRK4mrtTKskGo",
+            satellite: false,
+            centerCoord: [47.1049094496244, 5.796058602432188],
+            cid: "0x6a90ac32b5ab892b",
+            lang: "fr",
+            cityUrl: "/france/annecy-18614",
+            cityAnchorText: "Carte de Annecy, Rhône-Alpes, France",
+            id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+            embed_id: "346042",
+          };
+          var d = document;
+          var s = d.createElement("script");
+          s.src = "https://1map.com/js/script-for-user.js?embed_id=346042";
+          s.async = true;
+          s.onload = function (e) {
+            window.OneMap.initMap(setting);
+          };
+          var to = d.getElementsByTagName("script")[0];
+          to.parentNode.insertBefore(s, to);
+        })();
+      </script>
+      </div>
+    </div>
+    </section>
+    <!-- end google map -->
     <script src="main.js"></script>
   </body>
 </html>

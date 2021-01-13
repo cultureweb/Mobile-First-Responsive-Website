@@ -34,7 +34,15 @@ html {
   color: var(--body-font-color);
   scroll-behavior: smooth;
   overflow-x: hidden;
+  /* Hide scrollbar for Firefox IE and Edge */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
+/* Hide scrollbar for chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -213,18 +221,18 @@ section {
   font-size: 15px;
   font-weight: 500;
 }
-.project__section {
+#project {
   background: url("images/project-background.jpg") center no-repeat;
   background-size: cover;
 }
-.flex__container {
+.divider {
   min-height: 65vh;
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
   align-items: center;
 }
-.headline__title {
+.headline {
   color: #fff;
   font-size: 3.7rem;
   font-family: var(--main-font);
@@ -241,19 +249,9 @@ section {
 .headline__container p {
   color: #fff;
 }
-.image-group {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.5rem;
-}
-.projects__description {
-  padding-top: 3rem;
-  margin-bottom: 0;
-}
 .sub__headline {
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--secondary-font-color);
   font-weight: 100;
   line-height: 0.4;
   letter-spacing: 2px;
@@ -263,6 +261,16 @@ section {
   letter-spacing: 0.7rem;
   margin-right: -0.7rem;
 }
+.image-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+.project__description {
+  padding-top: 3rem;
+  margin-bottom: 0;
+}
+
 .btn {
   display: inline-block;
   text-transform: uppercase;
@@ -298,8 +306,13 @@ section {
   margin-bottom: 2.4rem;
 }
 .project__description p {
-  margin-bottom: 2.4rem;
+  margin: 2rem 0;
 }
 .project__info {
   text-align: center;
+}
+#blog {
+  /* background: url("images/perfect-blend.jpg") center no-repeat; */
+  background: url("images/blog.jpg") center no-repeat;
+  background-size: cover;
 }
