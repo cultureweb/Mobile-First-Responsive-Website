@@ -33,7 +33,6 @@ html {
   font-size: 10px;
   color: var(--body-font-color);
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -202,7 +201,7 @@ nav::before {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url("images/hero.jpg") center no-repeat #000;
+  background: url("images/hero3.jpg") center no-repeat #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
